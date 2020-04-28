@@ -1,0 +1,38 @@
+Para fazer este exercício vc precisa saber
+Variáveis
+Condicionais
+Looping
+Array
+hash
+
+
+Seu joão é um administrador de empresas
+Ele precisa de um projeto que seja armazenado os seus funcionários
+Para cadastrar o funciona, você téra que usar os seguintes campos.
+
+Modelo funcionario:
+---------------------------------
+- Codigo
+- Nome
+- Salario
+---------- Funções do Obj -------
+- Vale = Salario - 30%
+- SalarioSemVale = Salario - 70%
+---------------------------------
+
+Mostre no progra alguns relatórios
+1 - Lista nomes de funcionários
+2 - Lista nomes de funcionários e salarios
+3 - Lista nomes de funcionários, vale, SalarioSemVale
+4 - Lista de valores a pagar no mês = Soma de todos os salarios
+
+
+
+=============================
+Olá tudo bem João
+O que vc deseja fazer
+0 - Cadastrar funcionário
+1 - Lista nomes de funcionários
+2 - Lista nomes de funcionários e salarios
+3 - Lista nomes de funcionários, vale, SalarioSemVale
+4 - Lista de valores a pagar no mês = Soma de todos os salarios
