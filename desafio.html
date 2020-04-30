@@ -6,30 +6,62 @@
     <title></title>
 </head>
 <body>
-    <header>
-        <h1>Empresa do seu João</h1>
-    </header>
-
-    <main>
-        <table>
-            <th>
-                <td>Nome</td>
-                <td>Salário</td>
-                <td>Vale</td>
-                <td>Salário sem vale</td>
-            </th>
-            <tbody>
-                <tr>
-                    <td class="nome"></td>
-                    <td class="salario"></td>
-                    <td class="vale"></td>
-                    <td class="SalarioSemVale"></td>
-                </tr>
-            </tbody>
-        </table>
-    </main>
 
     <script>
+        opcao =  desejaFazer();
+        console.log(opcao);
+
+        if(opcao == 0){
+            funcionarios = cadastrarFuncionario();
+            opcao2 = prompt("1,2 - Lista nomes de funcionários");
+
+            if(opcao2 == 1){
+                listarFuncionario(funcionarios)
+            }else if(opcao2 == 2){
+                listarFuncionario2(funcionarios)
+            }
+        }
+
+        function desejaFazer(){
+            opcao = prompt("0 - Cadastrar funcionário");
+            return opcao;
+        }
+
+        function cadastrarFuncionario(){
+            funcionarios = []
+            for(i=0; i<2; i++){
+                nome = prompt("Digite o nome do funcionario");
+
+                salario = []
+                for(x=0; x<1; x++){
+                    valor = prompt("Digite o salário" + " do funcionário " + nome);
+                    valor = parseInt(valor);
+                    salario.push(valor);
+                }
+
+                funcionario = {}
+                funcionario.nome = nome
+                funcionario.salario = valor
+                funcionarios.push(funcionario)
+            }
+
+            return funcionarios;
+        }
+
+        function listarFuncionario(funcionarios){
+            for(i=0; i<funcionarios.length; i++){
+                funcionario = funcionarios[i]
+                document.write(funcionario.nome + "<br>")
+            }
+        }
+
+        function listarFuncionario2(funcionarios){
+            for(i=0; i<funcionarios.length; i++){
+                funcionario = funcionarios[i]
+                document.write(funcionario.nome + " " + funcionario.salario  +"<br>")
+            }
+        }
+
 
     </script>
 </body>
